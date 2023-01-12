@@ -51,28 +51,27 @@ PROGRAM'S FEATURES
 EXTRA CREDIT
 ------------
 * Support color (bpp=3) in input images.
-  ** Read red/green/blue channel chan for each pixel of picture by setting chan=0 or 1 or 2.
-  ** Height value (z) is determined equally by the height value of red, green, and blue.
-  ** Render RGB color for the height field default, but I also coded that render color with a blue theme
-
+  * Read red/green/blue channel chan for each pixel of picture by setting chan=0 or 1 or 2.
+  * Height value (z) is determined equally by the height value of red, green, and blue.
+  * Render RGB color for the height field default, but I also coded that render color with a blue theme
 * Color the vertices based on color values taken from another image of equal size. My code still support also smooth color gradients as per the core requirements.
-  ** If argv[2] exists, then it would be the name of the second image.
-  ** Run ' ./assign1 GrandTeton-256.jpg OhioPyle-256.jpg ' to read two images with the same size.
-  ** If the two images have different size, then the program would print an error log to hint the user.
-  ** displayPolygonModeExtraforColor() is developed for this and for each pixel in the first image, the function color it based on color values of the pixel with the same position taken from the second image.
+  * If argv[2] exists, then it would be the name of the second image.
+  * Run ' ./assign1 GrandTeton-256.jpg OhioPyle-256.jpg ' to read two images with the same size.
+  * If the two images have different size, then the program would print an error log to hint the user.
+  * displayPolygonModeExtraforColor() is developed for this and for each pixel in the first image, the function color it based on color values of the pixel with the same position taken from the second image.
 
 
 OPERATION
 ------------
 * Mouse
-  ** LeftMouseButton: drag to rotate/translate/scale x and y dimensions
-  ** MiddleMouseButton: drag to rotate/translate/scale z dimensions
-  ** RightMouseButton: open menu and you can choose to quit the running program
+  * LeftMouseButton: drag to rotate/translate/scale x and y dimensions
+  * MiddleMouseButton: drag to rotate/translate/scale z dimensions
+  * RightMouseButton: open menu and you can choose to quit the running program
 * Keyboard
-  ** Z: switch the controlState to TRANSLATE
-  ** X: switch the controlState to SCALE
-  ** C: switch the controlState to ROTATE
-  ** A: render the height field as POINTs
-  ** S: render the height field as LINEs
-  ** D: render the height field as SOLID TRIANGLEs
-  ** Q: switch the mode of supporting color (bpp=1) and (bpp=3) in input images
+  * Z: switch the controlState to TRANSLATE
+  * X: switch the controlState to SCALE
+  * C: switch the controlState to ROTATE
+  * A: render the height field as POINTs
+  * S: render the height field as LINEs
+  * D: render the height field as SOLID TRIANGLEs
+  * Q: switch the mode of supporting color (bpp=1) and (bpp=3) in input images
